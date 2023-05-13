@@ -1,0 +1,99 @@
+.advice__app{
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice--box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10 5 ;
+    padding: 2rem;
+}
+
+.advice__app__head{
+    color: hsl(150, 100%, 66%);
+    margin: 1rem;
+}
+
+.advice__app__text{
+    color:  hsl(193, 38%, 86%);
+    font-size: 28px;
+    margin: 2rem;
+}
+
+.advice__app__imgD{
+    margin: 1rem;
+}
+
+.advice__app__imgM{
+    display: none;
+}
+
+.advice__app__icon{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(150, 100%, 66%);
+    padding: 0.5rem;
+    align-content: center;
+    border-radius: 100%;
+    margin-top: -20px;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 575px) {
+    .advice--box{
+        padding: 1rem;
+    }
+    .advice__app__text{
+        font-size: 18px;
+        margin: 0.5rem;
+    }
+    .advice__app__imgM{
+        display: block;
+        margin: 1rem;
+    }
+    .advice__app__imgM img{
+        width: 50px;
+    }
+
+    .advice__app__imgD{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .advice__app__text{
+        font-size: 15px;
+    }
+    .advice--box{
+        padding: 0.5rem;
+    }
+    .advice__app__imgM{
+        display: block;
+        margin: 1rem 0.5rem;
+    }
+    .advice__app__imgM img{
+        width: 30px;
+    }
+    .advice__app__icon{
+        width: 35px;
+        height: 35px;
+    }
+    .advice__app__icon img{
+        width: 20px;
+        height: 20px;
+    }
+}
+

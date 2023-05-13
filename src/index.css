@@ -1,0 +1,11 @@
+@import url(https://fonts.google.com/specimen/Manrope);
+
+:root{
+    --font-text: 'Manrope';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
