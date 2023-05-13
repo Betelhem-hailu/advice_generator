@@ -3,13 +3,17 @@ import "./App.css";
 import dividerD from "./assets/pattern-divider-desktop.svg";
 import dividerM from "./assets/pattern-divider-mobile.svg";
 import dice from "./assets/icon-dice.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 
 const App = () => {
   const [message, setMessage] = useState([]);
 
+  useEffect(() => {
+  handleClick()
+  }, []);
+  
   function handleClick () {
     fetch("https://api.adviceslip.com/advice")
     .then((res) => res.json())
